@@ -45,7 +45,8 @@ describe('PlayerView', function() {
       songQueue.playFirst();
       expect(appView.playerView.model).to.equal(firstSong);
       // Simulate the end of the first song
-      $(appView.playerView.el).trigger('ended');
+      // debugger;
+      $(appView.playerView.el).trigger('ended');            //says "undefined is not a function"
       expect(appView.playerView.model).to.equal(secondSong);
       // Simulate the end of the second song
       $(appView.playerView.el).trigger('ended');
