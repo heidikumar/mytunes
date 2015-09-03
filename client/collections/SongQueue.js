@@ -25,7 +25,5 @@ var SongQueue = Songs.extend({
   playFirst: function(){
     this.at(0).play();
   }
-    //the songQueue connects to the library
-      //does it need a reference to the current song in the app param's library?
 
 });
